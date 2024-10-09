@@ -5,8 +5,9 @@ const solution = (n) => {
     if (n % 2 === 1) {
       jump += 1;
       n -= 1;
+    } else {
+      n = Math.floor(n / 2);
     }
-    n = Math.floor(n / 2);
   }
 
   return jump;
